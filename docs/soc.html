@@ -101,6 +101,7 @@
 
         <h4>Calculation Class</h4>
 
+
         <p>We created a calculation class that handles all the value inputs for the calculator. By defining the parameters
         for the calculator's inputs in one class, we reuse this class everytime we need to call a function. This also avoids
         complexity because without this class, we would have to write the parameter conditions for each function class.
@@ -110,6 +111,10 @@
         because we want our calculations to be stored as objects later on in our calculator history. It also allows for
         allowing multiple inputs, instead of a defined number of inputs. Lastly, it converts the inputs to the float data type, so
         when we use the calculation class in our function classes, all the data has the same data type.</p>
+
+        <a href="https://github.com/k3vinhu4ng/IS218calculator/blob/9892b27b068cbdad00d8fc0e8e6b6f6efc522c45/calculator/calculations/calculation.py#L4-L22"
+           target="_blank" class="btn btn-outline-danger">View Code</a>
+
         <hr>
         <h4>Functions Class</h4>
 
@@ -119,6 +124,10 @@
         makes the coding a lot simpler. For example, in the history class, each function can just be called from the class.
         In addition with the calculation class, the functions class hides a lot of complexity that makes the code simpler
         and easier to manage.</p>
+
+        <a href="https://github.com/k3vinhu4ng/IS218calculator/blob/9892b27b068cbdad00d8fc0e8e6b6f6efc522c45/calculator/calculations/addition.py#L5-L12"
+           target="_blank" class="btn btn-outline-danger">View Code</a>
+
 
         <hr>
         <h4>History Class</h4>
@@ -132,6 +141,11 @@
         overwhelming and hard to manage. Because we have many classes that layer on top of each other, the history class is relatively simple to manage
         because it hides and separates other functions, such as the calculation algorithm or the code that involves converting data types and
         creating factory objects.</p>
+
+        <a href="https://github.com/k3vinhu4ng/IS218calculator/blob/9892b27b068cbdad00d8fc0e8e6b6f6efc522c45/calculator/history/calculations.py#L8-L89"
+           target="_blank" class="btn btn-outline-danger">View Code</a>
+
+
         <hr>
         <h4>Calculator Class</h4>
 
@@ -152,7 +166,8 @@
         The function class gets the result. The history class adds to the history. Separation of concerns allows for
         a simple end product. In addition, it allows for easier maintenance of code because each separate class is only concerned
         with a specific function.</p>
-
+        <a href="https://github.com/k3vinhu4ng/IS218calculator/blob/9892b27b068cbdad00d8fc0e8e6b6f6efc522c45/calculator/calculator.py#L9-L68"
+           target="_blank" class="btn btn-outline-danger">View Code</a>
 
 
 
