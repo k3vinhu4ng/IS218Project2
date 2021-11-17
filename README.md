@@ -5,7 +5,7 @@
 ### Kevin Huang
 
 
-[Website Hosted on Azure Cloud]()
+[Website Hosted on Azure Cloud](http://is218project2.eastus.azurecontainer.io/)
 
 [Website Hosted on Github Pages](https://k3vinhu4ng.github.io/IS218Project2/)
 
