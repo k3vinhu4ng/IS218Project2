@@ -143,16 +143,78 @@
 
                 </code>
             </div>
-        </div>
+        </div><br>
         <p>For the Arrange step, we set test values for two variables that will be put into our function. Then, we Acted
         on our function by calling it. Lastly, we Asserted that our answer is 8, since our initial test values were 5 and 3.</p>
 
         <hr>
         <h4>AAA Unit Testing in Calculator Program</h4>
-        <p>We have implemented the Arrange, Act, and Assert Unit Testing pattern in our Calculator program. Feel free to check it out</p>
+
+        <p>We have implemented the Arrange, Act, and Assert Unit Testing pattern in our Calculator program. Click below to view a simple example</p>
 
         <a href="https://github.com/k3vinhu4ng/IS218calculator/blob/0346c4665900a5dad67a279ce07eb08b1d28ec7d/tests/calculation_history_test.py#L232-L264"
            target="_blank" class="btn btn-outline-danger">AAA Unit Testing</a>
+        <br><br>
+
+        <h5>Introducing CSV Files</h5>
+        <p>Often times, we need to test our programs with large data sets known as CSV files. CSV stands for comma separated values.
+            We also convert common excel files in csv files that can be used in our programs. A CSV file looks like this.</p>
+        <div class="card w-75">
+            <div class="card-header">
+                Sample_CSV_File.csv
+            </div>
+            <div class="card-body text-danger">
+
+                <code>name, age, gender</code><br>
+                <code>mike, 13, male</code><br>
+                <code>sarah, 25, female</code><br>
+                <code>ben, 49, male</code><br>
+
+            </div>
+        </div>
+        <br>
+        <p>However, a CSV file for our calculator program would involve numerical values and results
+            that will be tested by our calculator functions.</p>
+
+        <a href="https://github.com/k3vinhu4ng/IS218calculator/blob/history/tests/tests_data/addition.csv#L1-L3"
+           target="_blank" class="btn btn-outline-danger">CSV File for Testing Calculator</a>
+        <br><br>
+
+        <h5>Installing Pandas</h5>
+
+        <p>To test our CSV files, we first need to install pandas so we can effectively arrange our csv file into a testable format.</p>
+
+        <div class="card w-75">
+            <div class="card-header">
+                Install Pandas on Terminal
+            </div>
+            <div class="card-body text-danger">
+
+                <code>pip install pandas</code>
+
+            </div>
+        </div>
+        <br>
+
+        <p>Afterwards, we have the necessary tools to effectively use our csv files in our test. </p>
+
+        <h5>Testing CSV files with AAA</h5>
+
+        <h6>Arrange</h6>
+        <p>To arrange our data, we need to set up the CSV file so that the values can be used to test our functions. To arrange
+        the CSV file, we need to find the corresponding location of the CSV file, read the file, and convert the values into a list.</p>
+
+        <h6>Act</h6>
+        <p>To act on our data, we need to run a for loop to go through the list of data. Then, we take the indexed values
+        and use them to test our function</p>
+
+        <h6>Assert</h6>
+        <p>Lastly, we assert our indexed values with the expected results from the data from our csv file.</p>
+
+
+        <a href="https://github.com/k3vinhu4ng/IS218calculator/blob/f27bd63582b26452db3680bb895268f0f024ab6b/tests/addition_csv_test.py#L6-L18"
+           target="_blank" class="btn btn-outline-danger">AAA Testing for CSV File</a>
+
 
         <br><br>
     </div>
