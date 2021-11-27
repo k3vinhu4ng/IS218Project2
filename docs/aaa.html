@@ -154,9 +154,10 @@
 
         <a href="https://github.com/k3vinhu4ng/IS218calculator/blob/0346c4665900a5dad67a279ce07eb08b1d28ec7d/tests/calculation_history_test.py#L232-L264"
            target="_blank" class="btn btn-outline-danger">AAA Unit Testing</a>
-        <br><br>
+        <br>
+       <hr>
 
-        <h5>Introducing CSV Files</h5>
+        <h4>Introducing CSV Files</h4>
         <p>Often times, we need to test our programs with large data sets known as CSV files. CSV stands for comma separated values.
             We also convert common excel files in csv files that can be used in our programs. A CSV file looks like this.</p>
         <div class="card w-75">
@@ -178,9 +179,10 @@
 
         <a href="https://github.com/k3vinhu4ng/IS218calculator/blob/history/tests/tests_data/addition.csv#L1-L3"
            target="_blank" class="btn btn-outline-danger">CSV File for Testing Calculator</a>
-        <br><br>
+        <br>
+        <hr>
 
-        <h5>Installing Pandas</h5>
+        <h4>Installing Pandas</h4>
 
         <p>To test our CSV files, we first need to install pandas so we can effectively arrange our csv file into a testable format.</p>
 
@@ -197,18 +199,20 @@
         <br>
 
         <p>Afterwards, we have the necessary tools to effectively use our csv files in our test. </p>
+<hr>
 
-        <h5>Testing CSV files with AAA</h5>
+        <h4>Testing CSV files with AAA</h4>
+        <br>
 
-        <h6>Arrange</h6>
+        <h5>Arrange</h5>
         <p>To arrange our data, we need to set up the CSV file so that the values can be used to test our functions. To arrange
         the CSV file, we need to find the corresponding location of the CSV file, read the file, and convert the values into a list.</p>
 
-        <h6>Act</h6>
+        <h5>Act</h5>
         <p>To act on our data, we need to run a for loop to go through the list of data. Then, we take the indexed values
         and use them to test our function</p>
 
-        <h6>Assert</h6>
+        <h5>Assert</h5>
         <p>Lastly, we assert our indexed values with the expected results from the data from our csv file.</p>
 
 
